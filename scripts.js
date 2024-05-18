@@ -1,20 +1,17 @@
-// scripts.js
-
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('toggle-links');
-    const linkLists = document.querySelectorAll('.link-list li');
+    const funLinks = document.querySelector('.link-list:last-of-type');
 
-    toggleButton.addEventListener('click', () => {
-        linkLists.forEach(link => {
-            const description = link.textContent.split('-')[1];
-            if (description) {
-                const trimmedDescription = description.trim();
-                if (link.innerHTML.includes(trimmedDescription)) {
-                    link.innerHTML = link.innerHTML.split('-')[0];
-                } else {
-                    link.innerHTML += ` - ${trimmedDescription}`;
-                }
-            }
-        });
+    toggleButton.addEventListener('click', function() {
+        if (funLinks.style.display === 'none' || funLinks.style.display === '') {
+            funLinks.style.display = 'block';
+            toggleButton.textContent = 'Show Less Links';
+        } else {
+            funLinks.style.display = 'none';
+            toggleButton.textContent = 'Show More Links';
+        }
     });
+
+    // Initially hide the fun links
+    funLinks.style.display = 'none';
 });
