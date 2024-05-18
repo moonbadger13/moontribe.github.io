@@ -116,8 +116,23 @@
             <li><a href="https://www.goodreads.com" target="_blank">Goodreads</a> - Track your reading and discover new books.</li>
         </ul>
 
-        <button id="toggle-links">Toggle Link Descriptions</button>
+         <button id="toggle-links">Show More Links</button>
     </div>
-    <script src="scripts.js"></script>
+
+    <script>
+        document.getElementById('toggle-links').addEventListener('click', function() {
+            const funLinks = document.querySelector('.link-list:last-of-type');
+            if (funLinks.style.display === 'none' || funLinks.style.display === '') {
+                funLinks.style.display = 'block';
+                this.textContent = 'Show Less Links';
+            } else {
+                funLinks.style.display = 'none';
+                this.textContent = 'Show More Links';
+            }
+        });
+
+        // Initially hide the fun links
+        document.querySelector('.link-list:last-of-type').style.display = 'none';
+    </script>
 </body>
 </html>
