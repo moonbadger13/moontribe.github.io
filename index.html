@@ -1,160 +1,629 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoonTribe</title>
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            text-align: center;
-            color: #0073e6;
-            margin-bottom: 20px;
-        }
-
-        p {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 15px 0;
-            padding: 10px 15px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        li:hover {
-            background-color: #e0f4ff;
-        }
-
-        a {
-            text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        #toggle-links {
-            display: block;
-            margin: 40px auto 20px;
-            padding: 10px 30px;
-            background-color: #0073e6;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        #toggle-links:hover {
-            background-color: #005bb5;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>MoonTribe</h1>
-        <p>Welcome to MoonTribe, your gateway to the most useful and fun sites on the internet!</p>
-
-        <h2>Useful Links</h2>
-        <ul class="link-list">
-            <li><a href="https://www.google.com" target="_blank">Google</a> - The world's most popular search engine.</li>
-            <li><a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> - A free online encyclopedia with articles on virtually any topic.</li>
-            <li><a href="https://www.youtube.com" target="_blank">YouTube</a> - Watch and share videos from around the world.</li>
-            <li><a href="https://mail.google.com" target="_blank">Gmail</a> - Google's email service.</li>
-            <li><a href="https://www.amazon.com" target="_blank">Amazon</a> - The leading online marketplace for everything you need.</li>
-            <li><a href="https://www.reddit.com" target="_blank">Reddit</a> - A network of communities based on people's interests.</li>
-            <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> - A community of developers helping each other with coding problems.</li>
-            <li><a href="https://www.github.com" target="_blank">GitHub</a> - A platform for version control and collaboration in software development.</li>
-            <li><a href="https://www.dropbox.com" target="_blank">Dropbox</a> - Cloud storage for your files and photos.</li>
-            <li><a href="https://www.twitter.com" target="_blank">Twitter</a> - A social networking service for news and updates in 280 characters.</li>
-        </ul>
-
-      
-        <ul class="link-list">
-        <h2>Fun Links</h2>
-            <li><a href="https://www.netflix.com" target="_blank">Netflix</a> - Stream your favorite movies and TV shows.</li>
-            <li><a href="https://www.spotify.com" target="_blank">Spotify</a> - Listen to millions of songs and podcasts for free.</li>
-            <li><a href="https://www.hulu.com" target="_blank">Hulu</a> - Watch TV shows and movies online.</li>
-            <li><a href="https://www.twitch.tv" target="_blank">Twitch</a> - Live streaming of video games, esports, and more.</li>
-            <li><a href="https://www.pinterest.com" target="_blank">Pinterest</a> - Discover recipes, home ideas, style inspiration, and more.</li>
-            <li><a href="https://www.instagram.com" target="_blank">Instagram</a> - A photo and video sharing social networking service.</li>
-            <li><a href="https://www.tiktok.com" target="_blank">TikTok</a> - Create and share short videos with music effects.</li>
-            <li><a href="https://www.reddit.com/r/funny" target="_blank">Reddit - Funny</a> - A place for humor and laughs on Reddit.</li>
-            <li><a href="https://www.imdb.com" target="_blank">IMDb</a> - Find movie, TV, and celebrity information.</li>
-            <li><a href="https://www.goodreads.com" target="_blank">Goodreads</a> - Track your reading and discover new books.</li>
-       <h2>Emerging Tech and Innovative Startups</h2>
-            <li><a href="https://www.neuralink.com" target="_blank">Neuralink</a> - Developing ultra-high bandwidth brain-machine interfaces.</li>
-            <li><a href="https://www.zapatacomputing.com" target="_blank">Zapata Computing</a> - Pioneering quantum computing software.</li>
-            <li><a href="https://www.entytle.com" target="_blank">Entytle</a> - Industrial AI to drive customer engagement and recurring revenue.</li>
-            <li><a href="https://www.c16bio.com" target="_blank">C16 Biosciences</a> - Using microbiology to produce sustainable alternatives to palm oil.</li>
-            <li><a href="https://www.magicleap.com" target="_blank">Magic Leap</a> - Innovating in the field of augmented reality with mixed reality headsets.</li>
-            <li><a href="https://www.ginkgobioworks.com" target="_blank">Ginkgo Bioworks</a> - Designing custom microbes for customers across multiple markets.</li>
-            <li><a href="https://www.rivian.com" target="_blank">Rivian</a> - An automotive technology company developing sustainable electric vehicles.</li>
-            <li><a href="https://www.hevolus.com" target="_blank">Hevolus Innovation</a> - Augmented reality solutions for retail and enterprise applications.</li>
-            <li><a href="https://www.bioloomics.com" target="_blank">BioLoomics</a> - Creating innovative materials inspired by biological processes.</li>
-            <li><a href="https://www.carboncure.com" target="_blank">CarbonCure</a> - Technologies that reduce carbon footprint in the concrete industry.</li>
-            <li><a href="https://www.wonderhoods.com" target="_blank">Wonderhoods</a> - A tech-driven real estate platform focusing on sustainable urban development.</li>
-            <li><a href="https://www.nabla.com" target="_blank">Nabla</a> - A healthcare startup offering a platform to make healthcare more patient-centered.</li>
-            <li><a href="https://www.vowfood.com" target="_blank">Vow</a> - Cultivating meat from cells to create new culinary experiences.</li>
-            <li><a href="https://www.astranis.com" target="_blank">Astranis</a> - Satellite internet service aiming to bring connectivity to underserved areas.</li>
-            <li><a href="https://www.synthego.com" target="_blank">Synthego</a> - Engineering tools for gene editing using CRISPR technology.</li>
-            <li><a href="https://www.amprius.com" target="_blank">Amprius</a> - Leading innovations in silicon anode battery technology.</li>
-            <li><a href="https://www.ocktopi.ai" target="_blank">Ocktopi</a> - A platform to streamline remote learning and educational resources.</li>
-            <li><a href="https://www.benchling.com" target="_blank">Benchling</a> - Cloud-based informatics platform for life sciences R&D.</li>
-            <li><a href="https://www.lilium.com" target="_blank">Lilium</a> - Developing electric vertical take-off and landing jets for regional travel.</li>
-            <li><a href="https://www.ecovative.com" target="_blank">Ecovative</a> - Biofabrication company using mycelium to create sustainable materials.</li>
-        </ul>
-
-         <button id="toggle-links">More Links</button>
-    </div>
-
-    <script>
-        document.getElementById('toggle-links').addEventListener('click', function() {
-            const funLinks = document.querySelector('.link-list:last-of-type');
-            if (funLinks.style.display === 'none' || funLinks.style.display === '') {
-                funLinks.style.display = 'block';
-                this.textContent = 'Show Less Links';
-            } else {
-                funLinks.style.display = 'none';
-                this.textContent = 'Show More Links';
-            }
-        });
-
-        // Initially hide the fun links
-        document.querySelector('.link-list:last-of-type').style.display = 'none';
-    </script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="assets/index-BWFsJ2ev.css"
+      data-rsc-css-href="assets/index-BWFsJ2ev.css"
+      data-precedence="vite-rsc/importer-resources"
+    />
+    <title>Maison des Cimes — Alpine stay in Samoëns</title>
+    <meta
+      name="description"
+      content="Four-bedroom Samoëns apartment sleeping ten, with front and rear gardens, ski and bike storage, and town and lifts within walking distance."
+    />
+    <meta property="og:title" content="Maison des Cimes — Samoëns" />
+    <meta
+      property="og:description"
+      content="Four bedrooms, sleeps ten, with two gardens and ski and bike storage in walkable Samoëns."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:image" content="https://moontribe.app/og.png" />
+    <meta property="og:image:width" content="1731" />
+    <meta property="og:image:height" content="909" />
+    <meta
+      property="og:image:alt"
+      content="Maison des Cimes in Samoëns — sleeps 10"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maison des Cimes — Samoëns" />
+    <meta
+      name="twitter:description"
+      content="Four bedrooms, sleeps ten, with two gardens and ski and bike storage in walkable Samoëns."
+    />
+    <meta name="twitter:image" content="https://moontribe.app/og.png" />
+    <link rel="shortcut icon" href="favicon.svg" />
+    <link rel="icon" href="favicon.svg" />
+  </head>
+  <body>
+    <main>
+      <a class="skip-link" href="index.html#the-apartment"
+        >Skip to the apartment</a
+      >
+      <header class="site-header">
+        <a
+          class="brand"
+          href="index.html#top"
+          aria-label="Maison des Cimes home"
+          ><svg aria-hidden="true" viewBox="0 0 44 30" fill="none">
+            <path
+              d="M2 27 14.6 8.5l5.2 7.2L26.8 3 42 27"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="m10.4 14.7 4.1 2.7 4.2-3.3M22.8 10.3l4 2.5 4.4-2.4"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              opacity=".7"
+            ></path></svg
+          ><span
+            ><strong>Maison des Cimes</strong
+            ><small>Samoëns · Haute-Savoie</small></span
+          ></a
+        >
+        <nav aria-label="Primary navigation">
+          <a href="index.html#the-apartment">The apartment</a
+          ><a href="index.html#spaces">Spaces</a
+          ><a href="index.html#samoens">Samoëns</a>
+        </nav>
+        <a
+          class="header-cta"
+          href="https://www.airbnb.com/rooms/1277621739729972893"
+          target="_blank"
+          rel="noreferrer"
+          >Check dates
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 12h13M13 6l6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path></svg
+        ></a>
+      </header>
+      <section class="hero" id="top">
+        <picture class="hero-picture"
+          ><source
+            media="(max-width: 620px)"
+            srcset="images/samoens-hero-mobile.jpg" />
+          <img
+            class="hero-image"
+            src="images/samoens-hero-desktop.jpg"
+            alt="Snow-covered mountain peaks rising through cloud above Samoëns"
+            fetchpriority="high"
+        /></picture>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow light">4 bedrooms · sleeps 10 · Samoëns</p>
+          <h1>Come for the mountains.<br /><em>Stay for the stillness.</em></h1>
+          <p class="hero-copy">
+            Front and rear gardens, ski and bike storage, and an easy walk to
+            town and the lifts.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-light" href="index.html#spaces"
+              >Explore the apartment
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12h13M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg></a
+            ><a
+              class="text-link light-link"
+              href="https://www.airbnb.com/rooms/1277621739729972893"
+              target="_blank"
+              rel="noreferrer"
+              >Check dates on Airbnb</a
+            >
+          </div>
+        </div>
+        <a
+          class="photo-credit"
+          href="https://unsplash.com/photos/SrjF-UxQ69U"
+          target="_blank"
+          rel="noreferrer"
+          >Samoëns · Sirisvisual / Unsplash</a
+        >
+        <div class="stay-bar" role="group" aria-label="Property highlights">
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M4 18v-7h16v7M4 14h16M7 11V7h5a3 3 0 0 1 3 3v1M4 18v2M20 18v2"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path></svg
+            ><span><small>Bedrooms</small><strong>Four</strong></span>
+          </div>
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M8.5 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM15.5 10a2.5 2.5 0 1 0 0-5M3.5 19v-1.6a5 5 0 0 1 10 0V19M14 13.2a4.5 4.5 0 0 1 6.5 4V19"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path></svg
+            ><span><small>Capacity</small><strong>Sleeps 10</strong></span>
+          </div>
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 3l4 18M13 3l4 18M4 8h6M14 8h6M6 21h6M12 21h7"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path></svg
+            ><span
+              ><small>Storage</small><strong>Skis &amp; bikes</strong></span
+            >
+          </div>
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></path>
+              <circle
+                cx="12"
+                cy="10"
+                r="2.2"
+                stroke="currentColor"
+                stroke-width="1.5"
+              ></circle></svg
+            ><span
+              ><small>Walkable</small><strong>Town &amp; lifts</strong></span
+            >
+          </div>
+        </div>
+      </section>
+      <nav class="quick-nav" aria-label="On this page">
+        <div>
+          <a href="index.html#the-apartment">Apartment</a
+          ><a href="index.html#spaces">Photos</a
+          ><a href="index.html#outside">Outside</a
+          ><a href="index.html#samoens">Samoëns</a
+          ><a href="index.html#location">Map</a>
+        </div>
+      </nav>
+      <section class="intro section-shell" id="the-apartment">
+        <div class="intro-copy">
+          <p class="eyebrow">The apartment</p>
+          <h2>Four bedrooms.<br /><em>Sleeps ten.</em></h2>
+          <p class="lead">
+            105 m² with a 60 m² living room, open kitchen and two bathrooms.
+          </p>
+          <div class="feature-list">
+            <div>
+              <span>01</span>
+              <p>
+                <strong>Eight beds</strong>Two doubles, one twin and a room for
+                four.
+              </p>
+            </div>
+            <div>
+              <span>02</span>
+              <p>
+                <strong>Ski &amp; bike storage</strong>Secure space for winter
+                and summer kit.
+              </p>
+            </div>
+            <div>
+              <span>03</span>
+              <p>
+                <strong>Walkable location</strong>Town, ski bus and Grand Massif
+                Express nearby.
+              </p>
+            </div>
+          </div>
+        </div>
+        <figure class="editorial-image portrait-card">
+          <img
+            src="images/airbnb/listing-05.jpg"
+            alt="Dining table set for a group beside the open kitchen"
+            loading="lazy"
+            decoding="async"
+          />
+          <figcaption>
+            <span>Living &amp; dining</span
+            ><small>Open-plan kitchen · table for ten</small>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="statement">
+        <svg aria-hidden="true" viewBox="0 0 44 30" fill="none">
+          <path
+            d="M2 27 14.6 8.5l5.2 7.2L26.8 3 42 27"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+          <path
+            d="m10.4 14.7 4.1 2.7 4.2-3.3M22.8 10.3l4 2.5 4.4-2.4"
+            stroke="currentColor"
+            stroke-width="1.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            opacity=".7"
+          ></path>
+        </svg>
+        <p>High in character. Low on fuss.</p>
+      </section>
+      <section class="spaces-section" id="spaces">
+        <div class="section-shell section-heading">
+          <div>
+            <p class="eyebrow">Inside &amp; out</p>
+            <h2>Comfortable.<br /><em>Practical.</em></h2>
+          </div>
+          <p>Open-plan living, four proper bedrooms and room for ten.</p>
+        </div>
+        <p class="swipe-hint section-shell" aria-hidden="true">
+          Swipe through the apartment <span>→</span>
+        </p>
+        <div class="gallery-grid section-shell">
+          <figure class="gallery-main">
+            <img
+              src="images/airbnb/listing-04.jpg"
+              alt="Bright living room with a large sofa and open kitchen beyond"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>01 — The 60 m² living space</span
+              ><small>Bright &amp; open plan</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/airbnb/listing-02.jpg"
+              alt="Long dining table beside the open kitchen and garden doors"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>02 — Dinner for ten</span><small>Open kitchen</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/airbnb/listing-01.jpg"
+              alt="Full view through the living room towards the dining table and kitchen"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span>03 — One sociable floor</span
+              ><small>Living · dining · kitchen</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="bedroom-grid section-shell" role="group" aria-label="The four bedrooms">
+          <figure>
+            <img
+              src="images/airbnb/bedroom-01.jpg"
+              alt="Twin bedroom with two single beds and wardrobe"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Bedroom 1</strong><span>Twin room · two single beds</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/airbnb/bedroom-02.jpg"
+              alt="Double bedroom with garden door and built-in storage"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Bedroom 2</strong><span>Calm double room</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/airbnb/bedroom-03.jpg"
+              alt="Double bedroom with window and wardrobe"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Bedroom 3</strong><span>Light-filled double room</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/airbnb/bedroom-04.jpg"
+              alt="Flexible fourth bedroom with single beds and bunk beds"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Bedroom 4</strong><span>Flexible room · sleeps four</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="ten-section">
+        <div class="section-shell ten-grid">
+          <div class="ten-number" aria-hidden="true">10</div>
+          <div class="ten-copy">
+            <p class="eyebrow">Made for a full house</p>
+            <h2>Sleeps ten.<br /><em>Without feeling crowded.</em></h2>
+            <div class="micro-features">
+              <span><strong>01</strong>Four bedrooms</span
+              ><span><strong>02</strong>Eight beds</span
+              ><span><strong>03</strong>Two bathrooms</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gardens-section" id="outside">
+        <div class="section-shell gardens-heading">
+          <p class="eyebrow">Outside</p>
+          <h2>Front &amp; rear.<br /><em>Two gardens.</em></h2>
+        </div>
+        <div class="terrace-feature section-shell">
+          <figure class="garden-card">
+            <img
+              src="images/airbnb/listing-03.jpg"
+              alt="Large south-facing terrace with outdoor seating and garden planting"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <strong>Rear garden &amp; terrace</strong
+              ><span>South-facing with outdoor seating.</span
+              ><small>200 m²</small>
+            </figcaption>
+          </figure>
+          <div class="terrace-copy">
+            <p class="eyebrow">Outdoor space</p>
+            <h3>Room at the front.<br /><em>Sun at the back.</em></h3>
+            <p>Two gardens with direct access from the apartment.</p>
+          </div>
+        </div>
+      </section>
+      <section class="detail-strip">
+        <div class="section-shell detail-grid">
+          <div><strong>105</strong><span>m² apartment</span></div>
+          <div><strong>4</strong><span>bedrooms</span></div>
+          <div><strong>10</strong><span>guests</span></div>
+          <div><strong>2</strong><span>gardens</span></div>
+        </div>
+      </section>
+      <section class="samoens-section" id="samoens">
+        <div class="section-shell samoens-intro">
+          <div>
+            <p class="eyebrow light">The village</p>
+            <h2>Proper mountains.<br /><em>A proper village.</em></h2>
+          </div>
+          <div class="samoens-copy">
+            <p>
+              Walk into Samoëns or to the Grand Massif Express. Ski in winter;
+              hike and ride in summer.
+            </p>
+            <a
+              href="https://www.samoens.com/en/"
+              target="_blank"
+              rel="noreferrer"
+              >Explore Samoëns
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12h13M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+        <div class="destination-grid section-shell">
+          <figure class="destination-card village-card">
+            <img
+              src="images/samoens-village-winter.jpg"
+              alt="Snow-covered Place du Gros-Tilleul in Samoëns"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span
+                ><small>Down in the village</small
+                ><strong
+                  >Historic streets and genuine village life.</strong
+                ></span
+              ><a
+                href="https://commons.wikimedia.org/wiki/File:Samo%C3%ABns_-_Place_du_Gros-Tilleul_(hiver).jpg"
+                target="_blank"
+                rel="noreferrer"
+                >Photo: Xavier Caré / CC BY-SA 4.0</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="destination-card ski-card">
+            <img
+              src="images/samoens-ski.jpg"
+              alt="Winter view from the slopes above Samoëns"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>
+              <span
+                ><small>Up on the mountain</small
+                ><strong>265 km of linked Grand Massif pistes.</strong></span
+              ><a
+                href="https://commons.wikimedia.org/wiki/File:View_toward_Samo%C3%ABns_from_below_T%C3%AAte_des_Saix.jpg"
+                target="_blank"
+                rel="noreferrer"
+                >Photo: DimiTalen / CC0</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+        <div class="season-row section-shell">
+          <article>
+            <span>Winter</span>
+            <p>Lift 500 m away. Ski storage at home.</p>
+          </article>
+          <article>
+            <span>Summer</span>
+            <p>Bike storage, hiking, rafting and paragliding.</p>
+          </article>
+          <article>
+            <span>Village</span>
+            <p>Town and restaurants within walking distance.</p>
+          </article>
+        </div>
+      </section>
+      <section class="enquire-section" id="enquire">
+        <div class="section-shell enquire-grid">
+          <div>
+            <p class="eyebrow">Book your stay</p>
+            <h2>Choose dates.<br /><em>Bring your people.</em></h2>
+            <p>Live pricing and secure booking through Airbnb.</p>
+          </div>
+          <div class="booking-card">
+            <div class="rating-row">
+              <strong>4.78</strong
+              ><span>Guest rating<small>From 41 Airbnb reviews</small></span>
+            </div>
+            <div class="booking-points">
+              <span>✓ Linen and towels included</span
+              ><span>✓ End-of-stay cleaning included</span
+              ><span>✓ Ski and bike storage</span>
+            </div>
+            <a
+              class="booking-button"
+              href="https://www.airbnb.com/rooms/1277621739729972893"
+              target="_blank"
+              rel="noreferrer"
+              >Check live availability
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12h13M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg></a
+            ><small
+              >Current dates, pricing and booking terms are shown on
+              Airbnb.</small
+            >
+          </div>
+        </div>
+      </section>
+      <section class="location-section" id="location">
+        <div class="section-shell location-grid">
+          <div class="location-copy">
+            <p class="eyebrow">Location</p>
+            <h2>Walk to town.<br /><em>Walk to the lift.</em></h2>
+            <p>
+              The map shows Samoëns centre. The exact address is supplied after
+              booking.
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=Samo%C3%ABns%2C+France"
+              target="_blank"
+              rel="noreferrer"
+              >Open in Google Maps
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M5 12h13M13 6l6 6-6 6"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+            ></a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              title="Map of Samoëns, France"
+              src="https://www.google.com/maps?q=Samo%C3%ABns%2C%20France&amp;z=13&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen=""
+            ></iframe
+            ><span
+              >Village location shown · exact address supplied with
+              booking</span
+            >
+          </div>
+        </div>
+      </section>
+      <a
+        class="mobile-booking-bar"
+        href="https://www.airbnb.com/rooms/1277621739729972893"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Check live availability on Airbnb"
+        ><span><strong>4.78</strong><small>41 reviews</small></span
+        ><b
+          >Check dates
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M5 12h13M13 6l6 6-6 6"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path></svg></b
+      ></a>
+      <footer>
+        <div class="footer-top section-shell">
+          <a class="brand footer-brand" href="index.html#top"
+            ><svg aria-hidden="true" viewBox="0 0 44 30" fill="none">
+              <path
+                d="M2 27 14.6 8.5l5.2 7.2L26.8 3 42 27"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="m10.4 14.7 4.1 2.7 4.2-3.3M22.8 10.3l4 2.5 4.4-2.4"
+                stroke="currentColor"
+                stroke-width="1.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                opacity=".7"
+              ></path></svg
+            ><span
+              ><strong>Maison des Cimes</strong
+              ><small>Samoëns · Haute-Savoie</small></span
+            ></a
+          >
+          <p>Four bedrooms. Sleeps ten. Walk everywhere.</p>
+          <a class="back-top" href="index.html#top">Back to top ↑</a>
+        </div>
+        <div class="footer-bottom section-shell">
+          <span>© Maison des Cimes</span
+          ><span>105 m² · four bedrooms · two bathrooms</span
+          ><a
+            href="https://www.airbnb.com/rooms/1277621739729972893"
+            target="_blank"
+            rel="noreferrer"
+            >Book on Airbnb</a
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
