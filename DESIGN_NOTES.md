@@ -1,4 +1,6 @@
-# Chalet Lune — Autumn editorial redesign
+# Papillon — Autumn editorial redesign
+
+Rebranded to Papillon with an original SVG butterfly outline in `assets/papillon-mark.svg`. The bottom map marks the junction of Route de Vallon d'en Bas and Route de Sixt at 46.077214, 6.7348452. Junction coordinates were checked against OpenStreetMap node 291332714 and connected road ways 448662280 and 336480711. The marker is an arrival landmark; the exact entrance is supplied with the booking.
 
 The existing GitHub Pages site and custom domain are preserved. No framework, build step, analytics or external font service is required.
 
@@ -18,6 +20,6 @@ Booking destination: https://www.airbnb.com/rooms/1277621739729972893
 
 ## Maintenance and verification
 
-Edit `index.html`, `assets/lune.css` and `assets/lune.js`. Translations are in HTML `data-fr` attributes and the JavaScript season/gallery dictionaries. Language choice is stored locally; no data is transmitted.
+Edit `index.html`, `assets/papillon.css` and `assets/papillon.js`. Translations are in HTML `data-fr` attributes and the JavaScript season/gallery dictionaries. Language choice is stored locally; no data is transmitted.
 
-Run `node --check assets/lune.js`, `python3 tests/check_site.py` and `git diff --check`. Preview the root using a static server. Check desktop and narrow-screen layouts, EN/FR, gallery next/previous and Escape, all three seasonal tabs, FAQ disclosure and booking links. GitHub Pages publishes the `main` branch; preserve `CNAME` and `.nojekyll`.
+Run `node --check assets/papillon.js`, `python3 tests/check_site.py` and `git diff --check`. Preview the root using a static server. Check desktop and narrow-screen layouts, EN/FR, gallery next/previous and Escape, all three seasonal tabs, FAQ disclosure and booking links. GitHub Pages publishes the `main` branch; preserve `CNAME` and `.nojekyll`.

@@ -1,4 +1,4 @@
-"""Static checks for the buildless Chalet Lune site (Python standard library)."""
+"""Static checks for the buildless Papillon site (Python standard library)."""
 from html.parser import HTMLParser
 from pathlib import Path
 import re

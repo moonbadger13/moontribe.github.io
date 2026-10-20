@@ -49,13 +49,14 @@ function setLanguage(next){
   nav.setAttribute('aria-label',language==='fr'?'Navigation principale':'Main navigation');
   dialog.setAttribute('aria-label',language==='fr'?'Galerie du projet de rénovation':'Renovation image gallery');
   document.querySelector('.season-tabs').setAttribute('aria-label',language==='fr'?'Saisons':'Seasons');
+  document.querySelector('.map-frame').title=language==='fr'?'Carte du croisement des Vallons vers le centre de Samoëns':'Map showing the Vallons junction towards Samoëns centre';
   menu.setAttribute('aria-label',language==='fr'?'Ouvrir le menu':'Open menu');
   document.querySelector('#close-gallery').setAttribute('aria-label',language==='fr'?'Fermer la galerie':'Close gallery');
   document.querySelector('#previous-photo').setAttribute('aria-label',language==='fr'?'Image précédente':'Previous image');
   document.querySelector('#next-photo').setAttribute('aria-label',language==='fr'?'Image suivante':'Next image');
-  document.title=language==='fr'?'Chalet Lune — Votre parenthèse alpine · Samoëns':'Chalet Lune — A slower kind of alpine stay · Samoëns';
+  document.title=language==='fr'?'Papillon — Votre parenthèse alpine · Samoëns':'Papillon — A slower kind of alpine stay · Samoëns';
   updateSeason();if(dialog.open)showPhoto(activePhoto);
-  try{localStorage.setItem('chalet-lune-language',language);}catch{}
+  try{localStorage.setItem('papillon-language',language);}catch{}
 }
 document.querySelectorAll('[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
 document.querySelectorAll('[data-season]').forEach(btn=>{
@@ -73,5 +74,5 @@ menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')
 nav.addEventListener('click',e=>{if(e.target.closest('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}});
 document.querySelector('#year').textContent=new Date().getFullYear();
-let saved;try{saved=localStorage.getItem('chalet-lune-language');}catch{}
+let saved;try{saved=localStorage.getItem('papillon-language');}catch{}
 setLanguage(saved==='fr'?'fr':'en');

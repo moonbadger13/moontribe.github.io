@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 88" fill="none">
+  <title>Papillon butterfly</title>
+  <g stroke="#464e3e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M47 45C39 27 24 9 13 16C1 24 15 47 38 49C21 44 13 53 20 65C29 81 43 65 47 52"/>
+    <path d="M49 45C57 27 72 9 83 16C95 24 81 47 58 49C75 44 83 53 76 65C67 81 53 65 49 52"/>
+    <path d="M48 39C45 44 46 58 48 63C50 58 51 44 48 39ZM47 40C46 33 43 29 39 27M49 40C50 33 53 29 57 27"/>
+    <path d="M42 43C33 31 24 23 17 22M54 43C63 31 72 23 79 22" stroke-width="1.05"/>
+  </g>
+</svg>
